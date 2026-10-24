@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        
+        <!-- NEW: Welcome Message -->
+        <div id="welcome-message" style="margin-bottom: 20px;">
+            <h2 style="color: #2c3e50;">Weather App 🌍</h2>
+            <p style="color: #7f8c8d; font-size: 0.9rem;">Type any city name below to get real-time weather updates.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Error Message -->
+        <p id="error-message" class="error">City not found. Please try again.</p>
+
+        <!-- Weather Information -->
+        <div class="weather-info" id="weather-info" style="display: none;">
+            <h2 id="city-name">City Name</h2>
+            
+            <!-- This is where our beautiful new icons will go -->
+            <img src="" id="weather-icon" style="width: 150px; margin-top: 10px;">
+            
+            <p id="weather-description">Cloudy</p>
+            <h1 id="temperature">--°C</h1>
+            
+            <!-- Details section (Humidity and Wind) -->
+            <div class="details">
+                <div class="col">
+                    <p style="font-size: 0.9rem; color: #7f8c8d;">Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+                <div class="col">
+                    <p style="font-size: 0.9rem; color: #7f8c8d;">Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
